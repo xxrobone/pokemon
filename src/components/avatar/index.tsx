@@ -1,17 +1,31 @@
-import { useContext } from "react"
-import { AvatarContext } from "../../context/context"
-
-import './avatar.scss'
-import { AvatarContextType } from "../../utils/types/PokemonTypes"
+import { useEffect, useContext } from 'react';
+import './avatar.scss';
+import { AvatarContextType } from '../../utils/types/PokemonTypes';
+import { AvatarContext } from '../../context/context';
 
 const Avatar = () => {
-    const { avatar } = useContext(AvatarContext) as AvatarContextType;
-    console.log(avatar?.image)
-  return (
-      <div className="avatar">
-          <img src={`${avatar?.image}`}></img>
-    </div>
-  )
-}
+  const { avatar, setAvatar } = useContext(AvatarContext) as AvatarContextType;
 
-export default Avatar
+  // Retrieve the saved avatar.image from local storage when the component mounts
+  useEffect(() => {
+    const savedImage = localStorage.getItem('avatarImage');
+    if (savedImage) {
+      setAvatar({ name: '', image: savedImage, types: [] });
+    }
+  }, [setAvatar]);
+
+  // Update local storage whenever the avatar.image changes
+  useEffect(() => {
+    if (avatar?.image) {
+      localStorage.setItem('avatarImage', avatar.image);
+    }
+  }, [avatar]);
+
+  return (
+    <div className='avatar'>
+      <img src={avatar?.image} alt='Avatar' />
+    </div>
+  );
+};
+
+export default Avatar;
