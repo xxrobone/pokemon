@@ -1,0 +1,47 @@
+@import './styles/variables';
+@import './styles/mixins';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.menu {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    @include flexbox;
+    padding: 0 4rem;
+    
+   a {
+    color: black;
+    padding: 0.5rem 1rem;
+   }
+    
+}
+
+.container {
+    @include flexbox;
+    height: 100%;
+
+    .sidebar {
+        background-color: #1a1919;
+        flex: 0 0 25%;
+        width: 25%;
+    }
+}
+
+.pokemon-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
