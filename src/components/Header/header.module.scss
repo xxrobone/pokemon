@@ -3,11 +3,11 @@
 .header {
 
     @include flexbox;
-    @include header-styles(true, rgb(0, 0, 0));
+    @include header-styles(true, rgb(12, 12, 12));
 
     padding: $indent__l;
 
-    &_account,
+    &_avatar,
     &_logo {
         flex: 0 0 15%;
     }
@@ -23,14 +23,10 @@
         }
     }
 
-    &_account{
-        font: {
-           family: $font-montserrat;
-           size: $font-size__m ;
-        }
+    &_avatar{
 
         &:hover {
-            text-decoration: underline;
+            
         }
 
 

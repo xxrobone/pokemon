@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-@mixin button-style($color: rgb(132, 0, 0)) {
+@mixin button-style($color: rgb(124, 36, 36)) {
     border: {
         radius: 10px;
         width: 3px;
@@ -26,7 +26,7 @@
     }
 }
 
-@mixin header-styles($border: false, $color: rgb(132, 0, 0)){
+@mixin header-styles($border: false, $color: rgb(124, 36, 36)){
     @if $border {
         border: {
             radius: 10px;
@@ -41,7 +41,7 @@
 
 }
 
-@mixin pokemon-background($color: green){
+@mixin pokemon-background($color: rgb(51, 134, 51)){
     background:radial-gradient( invert($color), $color);
     border-radius: 50%;
     box-shadow: 1px 0px 40px 8px $color;
