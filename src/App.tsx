@@ -4,14 +4,19 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Layout from './pages/Layout';
-import PokemonPage from './pages/PokemonPage';
 import FileNotFound from './pages/fileNotFound';
 import { PokemonType } from './utils/types/PokemonTypes';
 import { AvatarContext, PokemonContext } from './context/context';
+import Contact from './pages/Contact';
 
 function App() {
   const [pokemon, setPokemon] = useState<PokemonType | null>(null);
   const [avatar, setAvatar] = useState<PokemonType | null>(null);
+
+  /* 
+  teachers solution
+  const [buddy, setBuddy ] = useState<string>('../public/pokemon.png');
+  */
 
   return (
     <>
@@ -21,7 +26,7 @@ function App() {
             <Route path='/' element={<Layout />}>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
-              <Route path='/pokemon' element={<PokemonPage />} />
+              <Route path='/contact' element={<Contact />} />
               <Route path='/*' element={<FileNotFound />} />
             </Route>
           </Routes>

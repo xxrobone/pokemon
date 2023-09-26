@@ -28,6 +28,10 @@ const Pokemon = () => {
     const types: string[] = data.types.map((item: any) => item.type.name);
 
     setPokemon({ name, image, types });
+
+    /* 
+    setBuddy(pokemon.name)
+    */
   };
 
   const setFavorite = (image: string, e: any) => {

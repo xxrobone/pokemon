@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Header from '../../components/Header';
 import { Outlet, NavLink } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Layout: FC = () => {
       <ul className='menu'>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
-        <NavLink to='/pokemon'>Pokemon</NavLink>
+        <NavLink to='/contact'>Contact</NavLink>
       </ul>
       <div className='container'>
         <div className='main_content'>

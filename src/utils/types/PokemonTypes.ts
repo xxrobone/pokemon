@@ -14,3 +14,10 @@ export type AvatarContextType = {
     avatar: PokemonType | null;
     setAvatar: (avatar: PokemonType | null) => void;
 }
+
+/* 
+export type BuddyContextType = {
+   buddy: string;
+   setBuddy: (buddy: string) => void
+}
+*/
