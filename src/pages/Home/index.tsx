@@ -1,13 +1,8 @@
-import React, { FC } from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
+import { FC } from 'react';
+import './home.scss';
 
 const Home: FC = () => {
-  return (
-    <div>
-      Home page
-     
-    </div>
-  );
+  return <div className='home'>Home page</div>;
 };
 
 export default Home;

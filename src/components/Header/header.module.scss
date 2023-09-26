@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 .header {
-
+    overflow: hidden;
     @include flexbox;
     @include header-styles(true, rgb(12, 12, 12));
 
@@ -19,17 +19,9 @@
     &_title{
         font: {
             size: $font-size__l;
-            family: $font-montserrat;
+            family: $font-alt;
         }
     }
 
-    &_avatar{
-
-        &:hover {
-            
-        }
-
 
     }
-
-}

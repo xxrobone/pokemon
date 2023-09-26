@@ -6,7 +6,7 @@ import About from './pages/About';
 import Layout from './pages/Layout';
 import PokemonPage from './pages/PokemonPage';
 import FileNotFound from './pages/fileNotFound';
-import {  PokemonType } from './utils/types/PokemonTypes';
+import { PokemonType } from './utils/types/PokemonTypes';
 import { AvatarContext, PokemonContext } from './context/context';
 
 function App() {

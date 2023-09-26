@@ -5,24 +5,56 @@
     justify-content: space-between;
 }
 
+@mixin flexboxCenter ($direction:column){
+    align-items: center;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+}
+
 @mixin button-style($color: rgb(124, 36, 36)) {
     border: {
         radius: 10px;
-        width: 3px;
+        width: 2px;
         style:solid;
         color: $color;
     }
 
     background: lighten($color, 25%);
     color: white;
-    font-size: $font-size__base;
+    font-size: $font-size__base - 0.2rem;
     text-transform: uppercase;
     letter-spacing: $indent__xxs;
     cursor: pointer;
-    padding: $indent__m ;
+    padding: $indent__m;
+    transition: background 0.3s ease-in-out;
 
     &:hover{
-        background: lighten($color, 15%);
+        background: lighten($color, 35%);
+        
+    }
+}
+
+@mixin button-style-sm($color: rgb(231, 235, 17)) {
+    border: {
+        radius: 10px;
+        width: 2px;
+        style:solid;
+        color: $color;
+    }
+
+    background: lighten($color, 25%);
+    color: rgb(17, 17, 17);
+    font-size: $font-size__base - 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: $indent__xxs;
+    cursor: pointer;
+    padding: $indent__xs;
+    transition: background 0.3s ease-in-out;
+
+    &:hover{
+        background: lighten($color, 35%);
+        
     }
 }
 

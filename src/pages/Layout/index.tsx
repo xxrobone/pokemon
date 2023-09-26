@@ -2,9 +2,11 @@ import React, { FC } from 'react';
 import Header from '../../components/Header';
 import { Outlet, NavLink } from 'react-router-dom';
 
+import '../../App.scss'
+
 const Layout: FC = () => {
   return (
-    <div>
+    <body>
       <Header />
       <ul className='menu'>
         <NavLink to='/'>Home</NavLink>
@@ -12,12 +14,11 @@ const Layout: FC = () => {
         <NavLink to='/pokemon'>Pokemon</NavLink>
       </ul>
       <div className='container'>
-        <div className='sidebar'></div>
         <div className='main_content'>
           <Outlet />
         </div>
       </div>
-    </div>
+    </body>
   );
 };
 

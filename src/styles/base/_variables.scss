@@ -15,19 +15,6 @@ $indent__xl: $indent__base * 4; // 64px
 $indent__xxl: $indent__base * 8; 
 $indent__xxxl: $indent__base * 12; 
 
-//
-// Fonts
-// --------------
-
-$font-montserrat: "Montserrat", sans-serif;
-
-$font-size__base: 1rem;
-
-$font-size__s: $font-size__base * .8;
-$font-size__m: $font-size__base * 1.6;
-$font-size__l: $font-size__base * 2;
-$font-size__xl: $font-size__base * 4;
-$font-size__xxl: $font-size__base * 6;
 
 //
 // Colores
@@ -53,6 +40,8 @@ $colors: (
     steel: #B7B7CE,
     fairy: #D685AD,
 );
+
+$color-bg: #c7a311;
 
 // breakpoints
 //--------------------------

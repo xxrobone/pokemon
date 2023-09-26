@@ -53,7 +53,7 @@ const Pokemon = () => {
               </p>
             ))}
           </div>
-          <button  onClick={(e) => setFavorite(pokemon.image, e)}>Make favorite</button>
+          <button className={styles.btn}  onClick={(e) => setFavorite(pokemon.image, e)}>Make favorite</button>
         </div>
       )}
       <div className={styles['pokemon__actions']}>

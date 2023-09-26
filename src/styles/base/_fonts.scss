@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+
+$font-base: 'Open Sans', sans-serif;
+$font-alt: 'Orbitron', sans-serif;
+$font-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+//
+// Fonts
+// --------------
+
+
+$font-size__base: 1rem;
+
+$font-size__s: $font-size__base * .8;
+$font-size__m: $font-size__base * 1.6;
+$font-size__l: $font-size__base * 2;
+$font-size__xl: $font-size__base * 4;
+$font-size__xxl: $font-size__base * 6;
+
+
+// font weight
+$font-thin: 100;
+$font-normal: 400;
+$fw-m: 600;
+$font-bold: 800;
+
